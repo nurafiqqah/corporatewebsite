@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Courses</title>
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+      body {font-family: 'Fraunces',Serif;}
+        .p {text-transform:uppercase;}
+        ul {
+  list-style-type: none;
+  margin-top: 0px;
+  margin: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+html, body {
+  margin: 0;
+  height: 100%;
+
+}
+.box {
+  position: relative;
+  overflow: auto;
+  padding: 0px;
+  margin-top: 0px;
+  height: 100%;
+}
+
+.sky {
+  margin: 0px;
+  height: 100%;
+  background: #007fd5;
+  position: relative;
+  overflow: hidden;
+  animation: sky-background 30s ease-out infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes sky-background {
+  0% {
+    background: #106ba8;
+  }
+  50% {
+    background: rgb(0, 0, 0);
+  }
+  100% {
+    background: #106ba8;
+  }
+}
+.cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://www.lowyat.net/wp-content/uploads/2019/01/uitm.jpg);
+  animation: animate 50s linear infinite;
+  
+}
+@keyframes animate 
+{
+  0%
+  {
+    background-position: 0px;
+  }
+  100%
+  {
+    background-position: -5440px;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  background-color:lightslategrey;
+  padding: 5px;
+  margin: 20px;
+}
+.container> div {
+  background-color:aliceblue;
+  text-align: left;
+  padding: 20px 10px 100px;
+  font-size: 16px;
+  
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.item2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.item3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 11px 17px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgba(29, 24, 24, 0.877);
+}
+
+.active {
+  background-color: lightblue;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.bgcolor {
+  position: absolute;
+
+}
+#footer{
+  position: relative;
+}
+.footer-main {
+  bottom: 0;
+  position: relative;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 10%;
+  margin-bottom: 0%;
+  background-color: #333;
+  padding: 0px 0px 0px;
+}
+.footer-social-icons {
+  width: 250px;
+  height: auto;
+  margin: auto;
+  float: right;
+  margin-top: 0px;
+}
+.footer-social-icons ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.footer-social-icons ul li{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px 10px;
+}
+.footer-social-icons ul li a{
+  color: lightblue;
+  font-size: 30px;
+  display: block;
+}
+.footer-social-icons ul li a i{
+  line-height: 0px;
+}
+.footer-info{
+  width:100%;
+  height: auto;
+  font-size: 12px;
+  padding: 20px 10px 10px;
+  color:white;
+}
+.footer-info ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+.footer-info ul li{
+  display: inline-block;
+  margin: 0px 15px;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 0px;
+  background-color: lightblue;
+  color: white;
+  padding:10px 0px 0.5px;
+}
+.uitmku {
+  background-image:url("https://1.bp.blogspot.com/-xwVPNl3Hr8w/XZnNvmL3_bI/AAAAAAAAG-s/Na1vL1eLMloFXVehMx1Wxn7HSZM-nGbZACLcBGAsYHQ/s1600/IMG_5916.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  height:400px;  
+    </style>
+</head>
+
+<body>
+<div class="sky">
+ <div class="cloud">
+   <div class="box">
+    <div style="background-color:lightblue;width:auto;border:20px black;padding:15px;margin:20px;display: block;">
+       <a href="index.html"><img src="https://logos-download.com/wp-content/uploads/2017/11/UiTM_Universiti_Teknologi_MARA_logo.png" alt="uitm logo" class="center" style="width:500px;height:144px;"></a>
+    </div>
+    <ul style="font-size:14px;position:-webkit-sticky;position: sticky;top:0;">
+      <li><a href="home.html"> Home </a></li>
+      <li><a class="active" href="courses.html">Courses</a></li>
+      <li><a href="faqs.html"> FAQs </a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+   <li style="float:right"><a href="contactus.html"><b>Get Started</b></a></li>
+    </ul>
+    <div class="container">
+      <div class="item1"><div class="uitmku"><h2 style="text-align:center;">COURSES</h2></div></div>
+	  <div class="item2">
+	    <h2>PRE-DIPLOMA</h2>
+		<h3>BA002 – Pre-Diploma Commerce</h3>
+		<p>This program is specially designed for students who have not met the entry </p>
+	  </div>
+	  <div class="item3">
+	    <h2>DIPLOMA</h2>
+		<h3>BA111 – Diploma in Business Studies</h3>
+		<p>Job opportunities include supervisory and junior management positions in both the private and public organizations</p>
+		<h3>BA118 – Diploma in Office Management and Technology</h3>
+		<p>Job opportunities include manufacturing, banking, business, services and entrepreneurship</p>
+		<h3>BA119 - Diploma in Banking Studies</h3>
+		<p>Graduates will be able to fill job vacancies at the supervisory and junior level at any financial institutions such as banks, finance companies and merchant banks.</p>
+	  </div> 
+	  <div class="item1">
+	    <h2>UNDERGRADUATE</h2>
+		<h3>BA232 – Bachelor in Office Systems Management (HONS)</h3>
+		<p>Students graduating from the program would have promising careers in any organization.</p>
+		<h3>BA240 – Bachelor of Business Administration (HONS) Marketing</h3>
+		<p>Due to the well–designed program structure, graduates will be highly demanded in marketing oriented organizations both in the government and public sectors, locally and internationally</p>
+		<h3>BA242 – Bachelor of Business Administration (HONS) Finance</h3>
+		<p>Graduates of this program will have the opportunity to work at finance oriented organizations, such as financial institutions, consulting firms, hotels and tourism industries and manufacturing firms.</p>
+		<h3>BA249 – Bachelor of Business Administration (HONS) Islamic Banking</h3>
+		<p>Graduates of this program have a wide choice of job opportunities. They could work as middle managers or executives in banking institutions, especially Islamic banking and other institutions dealing with finance, insurance and property.</p>
+		<h3>BA250 – Bachelor of Business Administration (HONS) Business Economics</h3>
+		<p>Graduates can have job opportunities at managerial and executive levels in any public and private organization. They can also become economic analysts, business and investment analysts, researchers and entrepreneurs.</p></div>
+	  <div class="item1">
+	    <h2>POSTGRAGUATE/DOCTOR OF PHILOSOPHY</h2>
+		<h3>AA701 - Master f Business Administration</h3>
+		<h3>AC770 - Master of Accounting</h3>
+		<h3>BA750 - Master of Science (Business Management)
+		<h3>AA901 - Doctor of Philosophy (Business Administration)
+		<h3>BA950 - Doctor f Philosophy (Business Management)
+	  </div>
+
+   </div>
+     <div id="footer">
+      <div class="footer-main">
+
+        <div class="footer-social-icons">
+          <ul>
+            <li><a href="https://twitter.com/uitmofficial" target="blank"><i class="fa fa-twitter"></i></a> </li>
+            <li><a href="https://www.facebook.com/uitmrasmi/" target="blank"><i class="fa fa-facebook"></i></a> </li>
+            <li><a href="https://www.instagram.com/uitm.official/" target="blank"><i class="fa fa-instagram"></i></a> </li>
+      
+          </ul>
+        </div>
+        <div class="footer-info">
+          <ul>
+            <li>Contact us : +603-5544 2000</li>
+            <li>Email Us : mailto:webmedia@uitm.edu.my</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p style="font-size:12px;text-align:center;margin-top:0px" >Copyright 2021 UITM. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+ </div> 
+</div>
+</body>
+</html>
